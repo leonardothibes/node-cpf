@@ -2,9 +2,7 @@
 
 Funções utilitárias para tratamento de CPF.
 
-[![Build Status](https://secure.travis-ci.org/leonardothibes/node-cpf.png)](http://travis-ci.org/leonardothibes/node-cpf)
-
-[![Package Quality](http://npm.packagequality.com/shield/node-cpf.svg)](http://packagequality.com/#?package=node-cpf)
+[![Build Status](https://secure.travis-ci.org/leonardothibes/node-cpf.png)](http://travis-ci.org/leonardothibes/node-cpf) [![Package Quality](http://npm.packagequality.com/shield/node-cpf.svg)](http://packagequality.com/#?package=node-cpf)
 
 
 Installation
