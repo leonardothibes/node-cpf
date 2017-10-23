@@ -10,6 +10,8 @@ Installation
 npm install node-cpf --save
 ```
 
+---------------------------------------
+
 Examples
 --------
 
