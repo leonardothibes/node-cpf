@@ -1,6 +1,6 @@
 {
   "name": "node-cpf",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Funções utilitárias para tratamento de CPF",
   "main": "index.js",
   "homepage": "https://github.com/leonardothibes/node-cpf#readme",

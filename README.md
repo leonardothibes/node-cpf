@@ -17,7 +17,7 @@ Examples
 * [CPF Validation](#cpf-validation)
 * [CPF Mask](#cpf-mask)
 * [CPF UnMask](#cpf-unmask)
-* [CPF isMasked](#cpf-is-masked)
+* [CPF is Masked](#cpf-is-masked)
 * [Random CPF Generation](#random-cpf-generation)
 
 Cpf Validation
