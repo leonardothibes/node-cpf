@@ -36,7 +36,7 @@ describe('Validator', function()
     {
         it('Invalid: ' + cpf, function(done)
         {
-            assert.bool(validator.isValid(cpf)).isFalse();
+            assert.bool(validator.validate(cpf)).isFalse();
             done();
         });
     });
@@ -45,7 +45,7 @@ describe('Validator', function()
     {
         it('Valid: ' + cpf, function(done)
         {
-            assert.bool(validator.isValid(cpf)).isTrue();
+            assert.bool(validator.validate(cpf)).isTrue();
             done();
         });
     });
