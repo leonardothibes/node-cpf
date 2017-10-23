@@ -1,6 +1,6 @@
 'use strict';
 
-const validator = require('../lib/validator'),
+const validator = require('../../lib/validator'),
       assert    = require('unit.js');
 
 const invalid = [
