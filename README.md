@@ -30,7 +30,7 @@ Contributors
 LICENSE
 =======
 
-Copyright (c) 2017 Anjos & Thibes Sistemas
+Copyright (c) 2017 Leonardo Thibes
 
 The MIT License
 
