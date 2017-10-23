@@ -1,6 +1,6 @@
 'use strict';
 
-const validator = require('../lib/validator'),
+const validator = require('../../lib/validator'),
       assert    = require('unit.js');
 
 const invalid = [
@@ -28,6 +28,7 @@ const valid = [
     '19592882703',
     '345.672.513-26',
     '34567251326',
+    '981.696.160-18',
 ];
 
 describe('Validator', function()

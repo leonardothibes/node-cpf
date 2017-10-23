@@ -1,8 +1,11 @@
 'use strict';
 
-const decorator = require('decorator'),
-      validator = require('validator');
+const decorator = require('./lib/decorator'),
+      validator = require('./lib/validator'),
+      generator = require('./lib/generator');
 
-exports.validate = validator.isValid;
+exports.validate = validator.validate;
+exports.isMaked  = decorator.isMaked;
 exports.mask     = decorator.mask;
 exports.unMask   = decorator.unMask;
+exports.generate = generator.generate;

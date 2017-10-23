@@ -1,10 +1,22 @@
 'use strict';
 
-const decorator = require('../lib/decorator'),
+const decorator = require('../../lib/decorator'),
       assert    = require('unit.js');
 
 describe('Decorator', function()
 {
+    it('Is Masked', function(done)
+    {
+        assert.bool(decorator.isMaked('123.456.789-12')).isTrue();
+        done();
+    });
+
+    it('Is UnMasked', function(done)
+    {
+        assert.bool(decorator.isMaked('12345678912')).isFalse();
+        done();
+    });
+
     it('Mask String', function(done)
     {
         assert.string(decorator.mask('12345678912')).isEqualTo('123.456.789-12');

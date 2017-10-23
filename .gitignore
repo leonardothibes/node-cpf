@@ -5,6 +5,7 @@ Thumbs.db
 .vagrant
 .settings
 .idea
+.vscode
 *.db
 *.bak
 *.swp
@@ -12,3 +13,4 @@ Thumbs.db
 build/*
 coverage/*
 node_modules/*
+test.js
