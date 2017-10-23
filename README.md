@@ -17,7 +17,7 @@ Examples
 * [CPF Validation](#cpf-validation)
 * [CPF Mask](#cpf-mask)
 * [CPF UnMask](#cpf-unmask)
-* [CPF isMasked](#cpf-ismasked)
+* [CPF isMasked](#cpf-is-masked)
 * [Random CPF Generation](#random-cpf-generation)
 
 Cpf Validation
@@ -53,7 +53,7 @@ cpf.unMask('226.088.422-91'); // returns '22608842291'
 
 ```
 
-CPF isMasked
+CPF Is Masked
 ------------
 
 ```js
