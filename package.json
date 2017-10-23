@@ -53,6 +53,9 @@
       "desc": "Exibe esta mensagem de HELP"
     }
   },
+  "dependencies": {
+    "shuffle-list": "^1.0.0"
+  },
   "devDependencies": {
     "istanbul": "^0.4.5",
     "jshint": "^2.9.5",
