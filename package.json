@@ -1,0 +1,22 @@
+{
+  "name": "node-cpf",
+  "version": "0.1.0",
+  "description": "Validador de CPF",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardothibes/node-cpf.git"
+  },
+  "keywords": [
+    "cpf"
+  ],
+  "author": "Leonardo Thibes <leonardothibes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leonardothibes/node-cpf/issues"
+  },
+  "homepage": "https://github.com/leonardothibes/node-cpf#readme"
+}
