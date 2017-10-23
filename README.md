@@ -17,6 +17,7 @@ Examples
 * [CPF Validation](#cpf-validation)
 * [CPF Mask](#cpf-mask)
 * [CPF UnMask](#cpf-unmask)
+* [CPF isMasked](#cpf-ismasked)
 * [Random CPF Generation](#random-cpf-generation)
 
 Cpf Validation
@@ -49,6 +50,17 @@ Cpf UnMask
 const cpf = require('node-cpf');
 
 cpf.unMask('226.088.422-91'); // returns '22608842291'
+
+```
+
+CPF isMasked
+------------
+
+```js
+const cpf = require('node-cpf');
+
+cpf.isMasked('226.088.422-91'); // returns TRUE
+cpf.isMasked('22608842291');    // returns FALSE
 
 ```
 
