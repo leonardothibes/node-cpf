@@ -18,6 +18,7 @@ Examples
 * [CPF Validation](#cpf-validation)
 * [CPF Mask](#cpf-mask)
 * [CPF UnMask](#cpf-unmask)
+* [Random CPF Generation](#random-cpf-generation)
 
 Cpf Validation
 --------------
@@ -49,6 +50,17 @@ Cpf UnMask
 const cpf = require('node-cpf');
 
 cpf.unMask('226.088.422-91'); // returns '22608842291'
+
+```
+
+Random CPF Generation
+---------------------
+
+```js
+const cpf = require('node-cpf');
+
+cpf.generate();     // returns a valid CPF without mask
+cpf.generate(true); // returns a valid CPF with mask
 
 ```
 
