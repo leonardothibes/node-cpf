@@ -10,5 +10,4 @@ Thumbs.db
 *.swp
 *.log
 coverage/*
-build/*
 node_modules/*

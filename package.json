@@ -19,7 +19,9 @@
   "scripts": {
     "lint": "./node_modules/.bin/jshint --config .jshintrc *.js ./lib/*.js",
     "test": "./node_modules/.bin/mocha test --recursive --reporter dot",
-    "clean": "rm -Rf node_modules",
+    "testdox": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha test -- --recursive --reporter spec",
+    "coverage": "google-chrome coverage/lcov-report/index.html",
+    "clean": "rm -Rf node_modules coverage",
     "help": "npm-help"
   },
   "scriptHelp": {
@@ -32,6 +34,12 @@
     "test": {
       "desc": "Roda a suite de testes"
     },
+    "testdox": {
+      "desc": "Roda a suite de testes com relatório"
+    },
+    "coverage": {
+      "desc": "Abre no Chrome o relatório de coverage"
+    },
     "clean": {
       "desc": "Remove as dependências externas"
     },
@@ -43,6 +51,7 @@
     }
   },
   "devDependencies": {
+    "istanbul": "^0.4.5",
     "jshint": "^2.9.5",
     "mocha": "^4.0.1",
     "npm-script-help": "^1.0.0",
