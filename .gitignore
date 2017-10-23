@@ -9,5 +9,6 @@ Thumbs.db
 *.bak
 *.swp
 *.log
+build/*
 coverage/*
 node_modules/*
