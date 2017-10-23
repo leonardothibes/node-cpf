@@ -6,7 +6,6 @@ os:
 
 node_js:
     - node
-    - iojs
     - lts/*
     - 8
     - 7
