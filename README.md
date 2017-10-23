@@ -1,4 +1,4 @@
-CPF
+CPF [![Build Status](https://secure.travis-ci.org/leonardothibes/node-cpf.png)](http://travis-ci.org/leonardothibes/node-cpf)
 ===
 
 Funções utilitárias para tratamento de CPF.
