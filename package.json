@@ -17,13 +17,16 @@
     "cpf"
   ],
   "scripts": {
+    "lint": "./node_modules/.bin/jshint --config .jshintrc *.js ./lib/*.js",
     "clean": "rm -Rf node_modules",
     "help": "npm-help"
   },
   "scriptHelp": {
     "install": {"desc": "Instala as dependências externas"},
+    "lint": {"desc": "Roda o verificador de sintaxe"},
     "test": {"desc": "Roda a suite de testes"},
     "clean": {"desc": "Remove as dependências externas"},
+    "publish": {"desc": "Publica uma nova versão no repositório NPM"},
     "help": {"desc": "Exibe esta mensagem de HELP"}
   },
   "devDependencies": {
