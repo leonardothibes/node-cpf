@@ -17,9 +17,17 @@
     "cpf"
   ],
   "scripts": {
-    "clean": "rm -Rf node_modules"
+    "clean": "rm -Rf node_modules",
+    "help": "npm-help"
+  },
+  "scriptHelp": {
+    "install": {"desc": "Instala as dependências externas"},
+    "test": {"desc": "Roda a suite de testes"},
+    "clean": {"desc": "Remove as dependências externas"},
+    "help": {"desc": "Exibe esta mensagem de HELP"}
   },
   "devDependencies": {
-    "jshint": "^2.9.5"
+    "jshint": "^2.9.5",
+    "npm-script-help": "^1.0.0"
   }
 }
