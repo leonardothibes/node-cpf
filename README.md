@@ -10,11 +10,25 @@ Installation
 npm install node-cpf --save
 ```
 
-Usage Example
--------------
+Examples
+--------
+
+* [CPF Validation](#cpf-validation)
+
+Cpf Validation
+--------------
+
 ```js
-    console.log('Aqui vai um breve exemplo de uso');
+const cpf = require('node-cpf');
+
+cpf.validate('226.088.422-91'); // returns TRUE
+cpf.validate('22608842291');    // returns TRUE
+
+cpf.validate('11111111111'); // returns FALSE
+
 ```
+
+---------------------------------------
 
 How to Contribute
 -----------------
