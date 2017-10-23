@@ -17,6 +17,9 @@
     "cpf"
   ],
   "scripts": {
-    "test": "echo \"Testando...\""
+    "clean": "rm -Rf node_modules"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.5"
   }
 }
