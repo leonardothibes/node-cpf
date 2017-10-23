@@ -1,7 +1,7 @@
 {
   "name": "node-cpf",
   "version": "0.1.0",
-  "description": "Validador de CPF",
+  "description": "Funções utilitárias para tratamento de CPF",
   "main": "index.js",
   "homepage": "https://github.com/leonardothibes/node-cpf#readme",
   "author": "Leonardo Thibes <leonardothibes@gmail.com>",

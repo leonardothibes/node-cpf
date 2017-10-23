@@ -1,7 +1,7 @@
 CPF
 ===
 
-Funções utilitárias para tratamento de CPFs.
+Funções utilitárias para tratamento de CPF.
 
 Installation
 ------------
