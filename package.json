@@ -1,6 +1,6 @@
 {
   "name": "node-cpf",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Funções utilitárias para tratamento de CPF",
   "main": "index.js",
   "homepage": "https://github.com/leonardothibes/node-cpf#readme",
@@ -29,6 +29,7 @@
   },
   "scriptHelp": {
     "install": {
+      "usage": "npm install",
       "desc": "Instala as dependências externas"
     },
     "lint": {
@@ -47,6 +48,7 @@
       "desc": "Remove as dependências externas"
     },
     "publish": {
+      "usage": "npm publish",
       "desc": "Publica uma nova versão no repositório NPM"
     },
     "help": {
