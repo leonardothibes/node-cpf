@@ -9,8 +9,6 @@ Installation
 npm install node-cpf --save
 ```
 
----------------------------------------
-
 Examples
 --------
 
@@ -75,15 +73,12 @@ cpf.generate(true); // returns a valid CPF with mask
 
 ```
 
----------------------------------------
 Test and development
 --------------------
 
 * Install external dependencies: **``npm install``**
 * Run the test suite without coverage: **``npm test``**
 * Run the test suite with coverage: **``npm run testdox``**
-
----------------------------------------
 
 How to Contribute
 -----------------
