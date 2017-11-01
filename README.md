@@ -18,7 +18,7 @@ Examples
 * [CPF is Masked](#cpf-is-masked)
 * [Random CPF Generation](#random-cpf-generation)
 
-Cpf Validation
+CPF Validation
 --------------
 
 ```js
@@ -31,7 +31,7 @@ cpf.validate('11111111111'); // returns FALSE
 
 ```
 
-Cpf Mask
+CPF Mask
 --------
 
 ```js
@@ -41,7 +41,7 @@ cpf.mask('22608842291'); // returns '226.088.422-91'
 
 ```
 
-Cpf UnMask
+CPF UnMask
 --------
 
 ```js
