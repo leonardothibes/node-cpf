@@ -1,4 +1,4 @@
-# CPF [![Build Status](https://secure.travis-ci.org/leonardothibes/node-cpf.png)](http://travis-ci.org/leonardothibes/node-cpf) [![Package Quality](http://npm.packagequality.com/shield/node-cpf.svg)](http://packagequality.com/#?package=node-cpf)
+# CPF ![NPM Package](https://badge.fury.io/js/node-cpf.svg) ![Downloads](https://img.shields.io/npm/dm/node-cpf.svg) [![Build Status](https://secure.travis-ci.org/leonardothibes/node-cpf.png)](http://travis-ci.org/leonardothibes/node-cpf) [![Package Quality](http://npm.packagequality.com/shield/node-cpf.svg)](http://packagequality.com/#?package=node-cpf)
 
 Funções utilitárias para tratamento de CPF.
 
