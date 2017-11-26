@@ -35,14 +35,14 @@ describe('Entry Point', function()
 
     it('Is Masked', function(done)
     {
-        let valid = cpf.isMaked('821.649.079-81');
+        let valid = cpf.isMasked('821.649.079-81');
         assert.bool(valid).isTrue();
         done();
     });
 
     it('Is UnMasked', function(done)
     {
-        let valid = cpf.isMaked('82164907981');
+        let valid = cpf.isMasked('82164907981');
         assert.bool(valid).isFalse();
         done();
     });

@@ -5,7 +5,7 @@ const decorator = require('./lib/decorator'),
       generator = require('./lib/generator');
 
 exports.validate = validator.validate;
-exports.isMaked  = decorator.isMaked;
+exports.isMasked = decorator.isMasked;
 exports.mask     = decorator.mask;
 exports.unMask   = decorator.unMask;
 exports.generate = generator.generate;
