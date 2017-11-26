@@ -7,13 +7,13 @@ describe('Decorator', function()
 {
     it('Is Masked', function(done)
     {
-        assert.bool(decorator.isMaked('123.456.789-12')).isTrue();
+        assert.bool(decorator.isMasked('123.456.789-12')).isTrue();
         done();
     });
 
     it('Is UnMasked', function(done)
     {
-        assert.bool(decorator.isMaked('12345678912')).isFalse();
+        assert.bool(decorator.isMasked('12345678912')).isFalse();
         done();
     });
 
