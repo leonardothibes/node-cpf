@@ -3,47 +3,69 @@
 const decorator = require('../../lib/decorator'),
       assert    = require('unit.js');
 
+const cpfs = [
+    {
+        unMasked: '12345678912',
+        masked  : '123.456.789-12',
+    },
+    {
+        unMasked: '   12345678912',
+        masked  : '   123.456.789-12',
+    },
+    {
+        unMasked: '12345678912   ',
+        masked  : '123.456.789-12   ',
+    },
+    {
+        unMasked: '   12345678912   ',
+        masked  : '   123.456.789-12   ',
+    },
+];
+
 describe('Decorator', function()
 {
-    it('Is Masked', function(done)
+    cpfs.forEach(function(cpf)
     {
-        assert.bool(decorator.isMasked('123.456.789-12')).isTrue();
-        done();
-    });
+        it('Is Masked: ' + cpf.masked, function(done)
+        {
+            assert.bool(decorator.isMasked(cpf.masked)).isTrue();
+            done();
+        });
 
-    it('Is UnMasked', function(done)
-    {
-        assert.bool(decorator.isMasked('12345678912')).isFalse();
-        done();
-    });
+        it('Is UnMasked: ' + cpf.unMasked, function(done)
+        {
+            assert.bool(decorator.isMasked(cpf.unMasked)).isFalse();
+            done();
+        });
 
-    it('Mask String', function(done)
-    {
-        assert.string(decorator.mask('12345678912')).isEqualTo('123.456.789-12');
-        done();
-    });
+        it('Mask String', function(done)
+        {
+            assert.string(decorator.mask(cpf.unMasked)).isEqualTo(cpf.masked.trim());
+            done();
+        });
 
-    it('Mask Number', function(done)
-    {
-        assert.string(decorator.mask(12345678912)).isEqualTo('123.456.789-12');
-        done();
-    });
+        it('Mask Number', function(done)
+        {
+            assert.string(decorator.mask(12345678912)).isEqualTo(cpf.masked.trim());
+            done();
+        });
 
-    it('Mask Fail', function(done)
-    {
-        assert.string(decorator.mask('123')).isEqualTo('123');
-        done();
-    });
+        it('Mask Fail', function(done)
+        {
+            assert.string(decorator.mask('123')).isEqualTo('123');
+            done();
+        });
 
-    it('UnMask Masked', function(done)
-    {
-        assert.string(decorator.unMask('123.456.789-12')).isEqualTo('12345678912');
-        done();
-    });
+        it('UnMask Masked', function(done)
+        {
+            assert.string(decorator.unMask(cpf.masked)).isEqualTo(cpf.unMasked.trim());
+            done();
+        });
 
-    it('UnMask UnMasked', function(done)
-    {
-        assert.string(decorator.unMask('12345678912')).isEqualTo('12345678912');
-        done();
+        it('UnMask UnMasked', function(done)
+        {
+            assert.string(decorator.unMask(cpf.unMasked)).isEqualTo(cpf.unMasked.trim());
+            done();
+        });
     });
 });
