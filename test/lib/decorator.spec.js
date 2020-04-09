@@ -22,6 +22,21 @@ const cpfs = [
     },
 ];
 
+const invalid = [
+    {
+        unMasked: '   123456789123   ',
+        masked  : '   123.456.789-12   ',
+    },
+    {
+        unMasked: '   12345678912a   ',
+        masked  : '   123.456.789-12   ',
+    },
+    {
+        unMasked: '   12345678912:   ',
+        masked  : '   123.456.789-12   ',
+    },
+];
+
 describe('Decorator', function()
 {
     cpfs.forEach(function(cpf)
@@ -65,6 +80,15 @@ describe('Decorator', function()
         it('UnMask UnMasked', function(done)
         {
             assert.string(decorator.unMask(cpf.unMasked)).isEqualTo(cpf.unMasked.trim());
+            done();
+        });
+    });
+
+    invalid.forEach(function(cpf)
+    {
+        it('UnMask Invalid: ' + cpf.unMasked.trim(), function(done)
+        {
+            assert.string(decorator.unMask(cpf.unMasked)).isEqualTo(cpf.unMasked.trim().substr(0, 11));
             done();
         });
     });
