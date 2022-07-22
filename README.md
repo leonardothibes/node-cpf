@@ -94,7 +94,7 @@ Contributors
 LICENSE
 =======
 
-Copyright (c) 2017 Leonardo Thibes
+Copyright (c) 2017-2022 Leonardo Thibes
 
 The MIT License
 
