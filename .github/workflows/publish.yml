@@ -9,23 +9,24 @@ env:
     TERM: xterm
 
 jobs:
-    build:
+    release:
+        name: 🚀 Release
         runs-on: ubuntu-latest
-
-        strategy:
-            matrix:
-                node-version: [14.x]
-
         steps:
             - name: 📚 checkout repo
               uses: actions/checkout@v2
+            - name: ⚙️ node
+              uses: actions/setup-node@v1.4.2
+              with:
+                  node-version: 14
+                  registry-url: https://registry.npmjs.org
             - name: 🙏🏻 install modules
               run: npm install
             - name: 🙌🏻 run lint tests
               run: npm run lint
             - name: 🤞🏻 run unit tests
               run: npm run testdox
-            - name: 🚀 publish
+            - name: 🥳 publish
               run: npm publish --access public
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_NODE_CPF}}
