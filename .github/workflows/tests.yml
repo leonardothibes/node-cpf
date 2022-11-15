@@ -1,0 +1,30 @@
+name: 🙈 Run Unit Tests
+
+on:
+    push:
+        branches:
+            - 'master'
+            - 'develop'
+            - 'release/*'
+            - 'hotfix/*'
+
+env:
+    TERM: xterm
+
+jobs:
+    release:
+        name: 🤞🏻 Unit Tests
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout repo
+              uses: actions/checkout@v3
+            - name: setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16
+            - name: install modules
+              run: npm install
+            - name: run lint tests
+              run: npm run lint
+            - name: run unit tests
+              run: npm run testdox
