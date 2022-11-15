@@ -10,12 +10,12 @@ env:
 
 jobs:
     release:
-        name: 🚀 Release
+        name: 🚀 Build and Release
         runs-on: ubuntu-latest
         steps:
             - name: checkout repo
               uses: actions/checkout@v2
-            - name: node
+            - name: setup Node.js
               uses: actions/setup-node@v1.4.2
               with:
                   node-version: 14
