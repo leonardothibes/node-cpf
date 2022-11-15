@@ -1,5 +1,5 @@
 {
-  "name": "node-cpf",
+  "name": "@leonardothibes/node-cpf",
   "version": "1.2.0",
   "description": "Funções utilitárias para tratamento de CPF",
   "main": "index.js",
