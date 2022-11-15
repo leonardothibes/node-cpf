@@ -20,6 +20,8 @@ jobs:
               with:
                   node-version: 14
                   registry-url: https://registry.npmjs.org
+              env:
+                  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
             - name: install modules
               run: npm install
             - name: run lint tests
