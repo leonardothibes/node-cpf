@@ -1,6 +1,6 @@
 # CPF [![npm](http://img.shields.io/npm/v/node-cpf.svg)](https://www.npmjs.com/package/node-cpf) ![Downloads](https://img.shields.io/npm/dm/node-cpf.svg) [![Package Quality](http://npm.packagequality.com/shield/node-cpf.svg)](http://packagequality.com/#?package=node-cpf) [![License](https://img.shields.io/npm/l/node-cpf.svg)](LICENSE)
 
-Funções utilitárias para tratamento de CPF.
+Utilities functions to handle brazilian CPF.
 
 Installation
 ------------
