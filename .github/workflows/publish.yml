@@ -1,12 +1,12 @@
-name: NPM Package Publish
+name: 🚀 NPM Package Publish
 
 on:
     push:
         branches:
-        - 'feature/deploy-workflow'
+            - 'feature/deploy-workflow'
 
 env:
-  TERM: xterm
+    TERM: xterm
 
 jobs:
     build:
@@ -17,11 +17,15 @@ jobs:
                 node-version: [14.x]
 
         steps:
-        - name: checkout repo
-          uses: actions/checkout@v2
-        - name: install modules
-          run: npm install
-        - name: running lint tests
-          run: npm run lint
-        - name: running unit tests
-          run: npm run testdox
+            - name: 📚 checkout repo
+              uses: actions/checkout@v2
+            - name: 🙏🏻 install modules
+              run: npm install
+            - name: 🙌🏻 run lint tests
+              run: npm run lint
+            - name: 🤞🏻 run unit tests
+              run: npm run testdox
+            - name: 🚀 publish
+              run: npm publish --access public
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.NPM_NODE_CPF}}
