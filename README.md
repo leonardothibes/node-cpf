@@ -1,4 +1,4 @@
-# CPF [![npm](http://img.shields.io/npm/v/node-cpf.svg)](https://www.npmjs.com/package/node-cpf) ![Downloads](https://img.shields.io/npm/dm/node-cpf.svg) [![Build Status](https://secure.travis-ci.org/leonardothibes/node-cpf.png)](http://travis-ci.org/leonardothibes/node-cpf) [![Package Quality](http://npm.packagequality.com/shield/node-cpf.svg)](http://packagequality.com/#?package=node-cpf) [![License](https://img.shields.io/npm/l/node-cpf.svg)](LICENSE)
+# CPF [![npm](http://img.shields.io/npm/v/node-cpf.svg)](https://www.npmjs.com/package/node-cpf) ![Downloads](https://img.shields.io/npm/dm/node-cpf.svg) [![Package Quality](http://npm.packagequality.com/shield/node-cpf.svg)](http://packagequality.com/#?package=node-cpf) [![License](https://img.shields.io/npm/l/node-cpf.svg)](LICENSE)
 
 Funções utilitárias para tratamento de CPF.
 
@@ -94,7 +94,7 @@ Contributors
 LICENSE
 =======
 
-Copyright (c) 2017 Leonardo Thibes
+Copyright (c) 2017-2022 Leonardo Thibes
 
 The MIT License
 
