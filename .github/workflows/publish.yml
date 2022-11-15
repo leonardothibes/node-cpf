@@ -1,0 +1,27 @@
+name: NPM Package Publish
+
+on:
+    push:
+        branches:
+        - 'feature/deploy-workflow'
+
+env:
+  TERM: xterm
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [14.x]
+
+        steps:
+        - name: checkout repo
+          uses: actions/checkout@v2
+        - name: install modules
+          run: npm install
+        - name: running lint tests
+          run: npm run lint
+        - name: running unit tests
+          run: npm run testdox
