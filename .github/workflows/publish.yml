@@ -2,8 +2,8 @@ name: 🚀 NPM Package Publish
 
 on:
     push:
-        branches:
-            - 'feature/deploy-workflow'
+        tags:
+            - '*'
 
 env:
     TERM: xterm
